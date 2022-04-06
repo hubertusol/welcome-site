@@ -37,7 +37,8 @@ export default {
             usd: null,
             api:'https://api.nomics.com/v1/currencies/ticker?key=0d216407944274a1b89a8f9b98101b7f6951a105&ids=BTC,ETH,SOL,BNB',
             obj: null,
-            interval: 0
+            interval: 0,
+            int2: 0
         }
     },
     mounted() {
@@ -106,6 +107,11 @@ img {
 .bear {
     text-align: center;
     color: red;
+}
+table
+{
+    overflow:hidden;
+    font-size: 2vh;
 }
 
 </style>

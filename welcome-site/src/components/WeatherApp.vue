@@ -197,7 +197,7 @@ th {
   color: white;
 }
 .big {
-  font-size: 20px;
+  font-size: 2vh;
   width: 57.5%;
   height: 100%;
   /*border: rgb(0, 26, 255) solid 2px;
@@ -223,7 +223,7 @@ th {
 .tablebig {
   width: 45%;
   height: 50%;
-  font-size: 42px;
+  font-size: 4vh;
   font-weight: bold;
 }
 .tablesmall {
@@ -237,5 +237,14 @@ th {
   border-radius: 20px;
   height: 100%;
   width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .big {
+    display: none;
+  }
+  .small {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 </style>
