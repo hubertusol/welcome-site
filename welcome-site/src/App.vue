@@ -5,7 +5,7 @@
        {{time}}
      </div>
      <div class="search">
-       DuckDuckGo <br>
+       DuckDuckGo/Google(alt) <br>
        <input type="text" placeholder="search..." class="duck" @keydown.exact="searchWeb" @keydown.alt="searchAlt" v-model="phrase">
      </div>
      <div class="stocks">
@@ -67,8 +67,8 @@ export default {
     searchAlt(e) {
       if (e.keyCode === 13) {
         console.log('alt + enter zostalo nacisnięte')
-        this.url = 'https://duckduckgo.com/?q='+ this.phrase +'&t=ffab&ia=web'
-        console.log(this.url)
+        this.url = 'https://www.google.com/search?channel=nrow5&client=firefox-b-d&q='+ this.phrase
+
         window.open(this.url,)
         this.phrase = ''
         focus(this.url)
@@ -98,7 +98,7 @@ body, html {
     background-color: black;
 }
 table {
-  font-size: 26px;
+  font-size: 3vh;
   height: 100%;
   width: 100%
 }
@@ -115,6 +115,7 @@ table {
     justify-content: space-between;
 }
 .left {
+  
     border: gray solid 2px;
     width: 40%;
 }
@@ -159,7 +160,14 @@ table {
 .stocks th {
   border-bottom: gray 2px solid;
 }
-
+@media only screen and (max-width: 1200px) {
+  .clock {
+    font-size: 9vh;
+  }
+  .search {
+    font-size: 2.5vh;
+  }
+}
 
 
 

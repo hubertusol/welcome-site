@@ -33,7 +33,6 @@
 //import * as Vue from 'vue'
 //import axios from 'axios'
 //import VueAxios from 'vue-axios'
-
 export default {
   data() {
     return {
@@ -55,10 +54,10 @@ export default {
       windDeg: null,
       windDir: null,
       unix_timestamp: null,
-      date: null
+      date: null,
+      weaint: 0
     };
   },
-
   mounted() {
     console.log('Getting location...')
     navigator.geolocation.getCurrentPosition(  
@@ -77,12 +76,13 @@ export default {
       this.test()
     } else {console.log('Could not load icon in time, trying again')}
       this.getTime()
-
   },
   beforeUpdate() {
     this.test()
     this.calcWind()
     console.log('Everything has been displayed!')
+    this.weaint = setInterval(this.getDATA, 600000)
+    
   },
   methods: {
     getData() {
@@ -114,7 +114,6 @@ export default {
       console.log('Importing time settings...')
       this.currentDate = new Date();
       this.Day = this.currentDate.getDate();
-
       this.Month = this.currentDate.getMonth() + 1;
       if (this.Month < 10) {this.Month = '0' + this.Month}
       this.Year = this.currentDate.getFullYear();
@@ -125,7 +124,6 @@ export default {
     this.ikona = '/nw/' + this.obj.weather[0].icon + '.png'
     this.back = 'background-image: url("/nw/img/' + this.obj.weather[0].icon + '.webp");'
     console.log(this.back)
-
     console.log('Icon displayed!')
     },
     calcWind() {
@@ -140,7 +138,6 @@ export default {
       else if (this.windDeg < 238) {this.windDir = 'NW'}
       else if (this.windDeg < 380) {this.windDir = 'N'}
     }
-
   }
 }
 </script>
@@ -161,7 +158,6 @@ th {
   margin: 0;
 }
 .container {
-
   -webkit-touch-callout: none; /* iOS Safari                           */
   -webkit-user-select: none; /* Safari                               */
   -khtml-user-select: none; /* Konqueror HTML                       */
@@ -197,7 +193,7 @@ th {
   color: white;
 }
 .big {
-  font-size: 20px;
+  font-size: 2vh;
   width: 57.5%;
   height: 100%;
   /*border: rgb(0, 26, 255) solid 2px;
@@ -223,7 +219,7 @@ th {
 .tablebig {
   width: 45%;
   height: 50%;
-  font-size: 42px;
+  font-size: 4vh;
   font-weight: bold;
 }
 .tablesmall {
@@ -237,5 +233,14 @@ th {
   border-radius: 20px;
   height: 100%;
   width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .big {
+    display: none;
+  }
+  .small {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 </style>
