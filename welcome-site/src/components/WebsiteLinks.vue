@@ -4,13 +4,13 @@
         <th><a href="https://www.youtube.com" target="_blank"><div class="box"><img src="/nw/buttons/yt.png" class="inside"/></div></a></th>
         <th><a href="https://www.netflix.com" target="_blank"><div class="box"><img src="/nw/buttons/netlfix.png" class="inside" style="height: 12vh; width: 12vh;"/></div></a></th>
         <th><div class="box"><a href="https://mail.google.com/mail/u/0/?hl=pl#inbox" target="_blank"><img src="/nw/buttons/gmail.png" class="inside"/></a></div></th>
-        <th><div class="box"><a href="#" target="_blank"><img src="/nw/buttons/x.png" class="inside"/></a></div></th>
+        <th><div class="box"><a href="https://leetify.com/" target="_blank"><img src="/nw/buttons/csgo.png" class="inside"/></a></div></th>
     </tr>
     <tr>
         <th><a href="https://www.twitter.com" target="_blank" class="behave"><div class="box"><img src="/nw/buttons/tw.png" class="inside"/></div></a></th>
         <th><div class="box"><a href="https://binance.com/pl" target="_blank"><img src="/nw/buttons/binance.png" class="inside"/></a></div></th>
-        <th><div class="box"><a href="https://uonetplus.vulcan.net.pl/wroclaw" target="_blank"><img src="/nw/buttons/vulcan.png" class="inside"/></a></div></th>
-        <th><div class="box"><a href="#" target="_blank"><img src="/nw/buttons/x.png" class="inside"/></a></div></th>
+        <th><div class="box"><a href="https://portal.wsb.pl/group/wroclaw" target="_blank"><img src="/nw/buttons/vulcan.png" class="inside"/></a></div></th>
+        <th><div class="box"><a href="https://onedrive.live.com/edit.aspx?resid=B235354E4F498A86!720&ithint=file%2cxlsx&wdOrigin=OFFICECOM-WEB.MAIN.EDGEWORTH" target="_blank"><img src="/nw/buttons/gym.png" class="inside"/></a></div></th>
     </tr>
     <tr>
         <th><div class="box"><a href="https://music.youtube.com/" target="_blank"><img src="/nw/buttons/music.png" class="inside"/></a></div></th>
