@@ -9,8 +9,8 @@
     <tr>
         <th><a href="https://www.twitter.com" target="_blank" class="behave"><div class="box"><img src="/nw/buttons/tw.png" class="inside"/></div></a></th>
         <th><div class="box"><a href="https://binance.com/pl" target="_blank"><img src="/nw/buttons/binance.png" class="inside"/></a></div></th>
-        <th><div class="box"><a href="https://portal.wsb.pl/group/wroclaw" target="_blank"><img src="/nw/buttons/vulcan.png" class="inside"/></a></div></th>
-        <th><div class="box"><a href="https://onedrive.live.com/edit.aspx?resid=B235354E4F498A86!720&ithint=file%2cxlsx&wdOrigin=OFFICECOM-WEB.MAIN.EDGEWORTH" target="_blank"><img src="/nw/buttons/gym.png" class="inside"/></a></div></th>
+        <th><div class="box"><a href="https://portal.wsb.pl/group/wroclaw" target="_blank"><img src="/nw/buttons/extranet.png" class="inside"/></a></div></th>
+        <th><div class="box"><a href="https://www.udemy.com/" target="_blank"><img src="/nw/buttons/udemy.png" class="reverse"/></a></div></th>
     </tr>
     <tr>
         <th><div class="box"><a href="https://music.youtube.com/" target="_blank"><img src="/nw/buttons/music.png" class="inside"/></a></div></th>
@@ -94,5 +94,16 @@ th {
     height: 11vh;
     width: 11vh
   }
+}
+.reverse {
+  opacity:0.6;
+  width: 14vh;
+  height: 14vh;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 </style>
